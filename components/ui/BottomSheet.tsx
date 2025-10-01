@@ -163,7 +163,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({
       visible={modalProps.visible}
       onRequestClose={onRequestClose}
     >
-      <GestureHandlerRootView>
+      <GestureHandlerRootView style={{ flex: 1 }}>
         <Animated.View
           className={clx('flex-1 items-center justify-end bg-black/50', className)}
           style={[
